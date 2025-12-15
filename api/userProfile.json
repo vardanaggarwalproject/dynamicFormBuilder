@@ -1,0 +1,81 @@
+{
+  "title": "User Profile Extended",
+  "index": [
+    {
+      "name": "email",
+      "type": "email",
+      "label": "Email",
+      "required": true
+    },
+    {
+      "name": "password",
+      "type": "password",
+      "label": "Password",
+      "min": 8,
+      "max": 16,
+      "required": true
+    },
+    {
+      "name": "age",
+      "type": "number",
+      "label": "Age",
+      "min": 18,
+      "max": 100
+    },
+    {
+      "name": "fullName",
+      "type": "text",
+      "label": "Full Name",
+      "min": 2,
+      "max": 30
+    },
+    {
+      "name": "bio",
+      "type": "textarea",
+      "label": "Bio",
+      "max": 200
+    },
+    {
+      "name": "role",
+      "type": "select",
+      "label": "Role",
+      "options": ["Admin", "User", "Guest"]
+    },
+    {
+      "name": "gender",
+      "type": "radio",
+      "label": "Gender",
+      "options": ["Male", "Female", "Other"]
+    },
+    {
+      "name": "skills",
+      "type": "checkbox",
+      "label": "Skills",
+      "options": ["React", "Node", "MongoDB", "Docker"]
+    },
+    {
+      "name": "dob",
+      "type": "date",
+      "label": "Date of Birth"
+    },
+    {
+      "name": "resume",
+      "type": "file",
+      "label": "Upload Resume",
+      "accept": ".pdf,.doc,.docx"
+    },
+    {
+      "name": "terms",
+      "type": "checkbox-single",
+      "label": "I agree to the Terms & Conditions",
+      "required": true
+    },
+    {
+      "name": "rating",
+      "type": "range",
+      "label": "Experience Level",
+      "min": 1,
+      "max": 10
+    }
+  ]
+}
