@@ -1,5 +1,5 @@
 // import Select from "react-select";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema } from "./schema.js";
@@ -12,7 +12,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./components/ui/select";
-
 
 export const FormWithZod = () => {
   const {
@@ -31,18 +30,16 @@ export const FormWithZod = () => {
     },
   });
 
-//   useEffect(() => {
-//     const checkDisability = watch((value) => {
-      
-//         if(value.firstname.includes(' ')){
-//           setDisabled((prev) => ({ ...prev, firstname: true }));
-//         }
-//         if(value.lastname.includes(' ')){
-//           setDisabled((prev) => ({ ...prev, lastname: true }));
-//         }
-//     }, []); 
+  //   useEffect(() => {
+  //     const checkDisability = watch((value) => {
 
-
+  //         if(value.firstname.includes(' ')){
+  //           setDisabled((prev) => ({ ...prev, firstname: true }));
+  //         }
+  //         if(value.lastname.includes(' ')){
+  //           setDisabled((prev) => ({ ...prev, lastname: true }));
+  //         }
+  //     }, []);
 
   const onSubmit = (data) => console.log(data);
   return (
@@ -61,7 +58,7 @@ export const FormWithZod = () => {
                   onChange={(e) => {
                     const value = e.target.value;
                     // when the space occur they are stopped
-                    if (value.includes(' ')) return;
+                    if (value.includes(" ")) return;
                     field.onChange(value);
                   }}
                   {...field}
@@ -83,9 +80,9 @@ export const FormWithZod = () => {
                 <Input
                   placeholder="enter last name"
                   className="flex gap-5 py-4 space-x-2"
-                   onChange={(e) => {
+                  onChange={(e) => {
                     const value = e.target.value;
-                    if (value.includes(' ')) return;
+                    if (value.includes(" ")) return;
 
                     field.onChange(value);
                   }}

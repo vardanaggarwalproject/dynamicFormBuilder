@@ -20,7 +20,8 @@
       "type": "number",
       "label": "Age",
       "min": 18,
-      "max": 100
+      "max": 100,
+      "required": true
     },
     {
       "name": "fullName",
@@ -43,15 +44,18 @@
     },
     {
       "name": "gender",
-      "type": "radio",
       "label": "Gender",
-      "options": ["Male", "Female", "Other"]
+      "type": "radio",
+      "required": true,
+      "options": ["Male", "Female"]
     },
     {
       "name": "skills",
-      "type": "checkbox",
       "label": "Skills",
-      "options": ["React", "Node", "MongoDB", "Docker"]
+      "type": "checkbox",
+      "required": true,
+      "multiple": true,
+      "options": ["React", "Node", "MongoDB", "Next.js"]
     },
     {
       "name": "dob",
