@@ -701,4 +701,4 @@ const ErrorText = (error, message) => {
   );
 };
 
-<ErrorText error={errors[field.name]} message={errors[field.name].message} />;
+
